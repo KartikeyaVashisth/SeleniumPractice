@@ -43,15 +43,12 @@ public class WebTableHandle {
 	
 	////a[text()='deepti gupta']/parent::td/preceding-sibling::td/input[@type='checkbox']
 	public static void selectUser(String userName) {
-		driver.findElement(By.xpath("//a[text()='"+userName+"']/parent::td/preceding-sibling::td/input[@type='checkbox']"))
-			.click();
-
+		driver.findElement(By.xpath("//a[text()='"+userName+"']/parent::td/preceding-sibling::td/input[@type='checkbox']")).click();
 	}
 	
 	//a[text()='Ali khan']/parent::td/following-sibling::td/a[@context='company']
 	public static String getUserCompanyName(String userName) {
-		return driver.findElement(By.xpath("//a[text()='"+userName+"']/parent::td/following-sibling::td/a[@context='company']"))
-					.getText();
+		return driver.findElement(By.xpath("//a[text()='"+userName+"']/parent::td/following-sibling::td/a[@context='company']")).getText();
 	}
 	
 	

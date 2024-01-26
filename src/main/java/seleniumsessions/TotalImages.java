@@ -18,7 +18,7 @@ public class TotalImages {
 		driver.get("https://www.amazon.com/");
 
 		
-		List<WebElement> imagesList = driver.findElements(By.tagName("img111"));
+		List<WebElement> imagesList = driver.findElements(By.tagName("img"));
 		
 		System.out.println(imagesList.size());//0
 		

@@ -19,8 +19,8 @@ public class StaleElementRefExceptionConcept {
 
 		driver.navigate().refresh(); //DOM v2 -- 100/90
 		
-		fn = driver.findElement(By.id("input-email"));
-		fn.sendKeys("gurjeet@gmail.com");
+		fn = driver.findElement(By.id("input-email")); //Here a new WebElement got created(with new ElementID internally) with new DOM version.
+		fn.sendKeys("gurjeet@gmail.com"); //Here, we will get StaleElementReferenceException if we don't create the WebElement once again(Line 22) because DOM got refreshed as well after refresh and we are still using 'fn' which is created from the previous DOM version.
 
 	}
 	

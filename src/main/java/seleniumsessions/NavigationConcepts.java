@@ -21,6 +21,9 @@ public class NavigationConcepts {
 		//driver.navigate().to(new URL("https://www.amazon.com/"));
 		
 		driver.navigate().to("https://www.amazon.com/");
+		//Diff between get() and naviaget.to() method is:
+		//1. .get("") will wait until the page gets loaded completely whereas navigate().to("") it will redirect to the page and then return immediately.
+		//2. .get("") will not retain browser history whereas navigate.to("") will remember the browser history and therefore we can navigate back and forth.
 		
 		System.out.println(driver.getTitle());
 

@@ -16,6 +16,9 @@ public class ShadowDOMConcept {
 		//driver.findElement(By.id("pizza")).sendKeys("veg pizza");
 		
 		//browser --> page --> shadowDOM --> shadow DOM ---> input element
+		//If there are multiple ShadowDOM in the application, better to use some other tool like PlayWright.
+		//shadowDOM should be in open state, if closed, no tool can work on it then, will need to ask developers to open the shadowDOM.
+		//Shadow DOM elements don’t support xpath so we can write only cssSelector for shadow DOM elements.
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		WebElement pizza = (WebElement)js.executeScript("return document.querySelector(\"#userName\").shadowRoot.querySelector(\"#app2\").shadowRoot.querySelector(\"#pizza\")");

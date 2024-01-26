@@ -34,12 +34,12 @@ public class BrowserMultipleWindowsHandle {
 		Iterator<String> it = handles.iterator();
 
 		while (it.hasNext()) {
-			String windowId = it.next();
+			String windowId = it.next(); //This will start with the parent window id.
 			driver.switchTo().window(windowId);
 			System.out.println(driver.getCurrentUrl());
 			Thread.sleep(1000);
 
-			if (!windowId.equals(parentWindowId)) {
+			if (!windowId.equals(parentWindowId)) { //So that, the parent window is not closed.
 				driver.close();
 			}
 

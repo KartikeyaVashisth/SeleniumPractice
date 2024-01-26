@@ -18,7 +18,7 @@ public class NestedFrames {
 		driver.findElement(By.id("jex")).sendKeys("crush2");
 		
 		driver.switchTo().parentFrame();//valid
-		//driver.switchTo().defaultContent();
+		//driver.switchTo().defaultContent(); //Selects either the first frame on the page, or the main document when a page contains iframes.
 		driver.findElement(By.id("inp_val")).clear();
 		driver.findElement(By.id("inp_val")).sendKeys("crush1-update");
 		

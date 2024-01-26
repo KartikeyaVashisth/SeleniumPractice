@@ -21,7 +21,7 @@ public class RightClickHandle {
 		
 		Actions act = new Actions(driver);
 		
-		act.contextClick(ele).build().perform();
+		act.contextClick(ele).build().perform(); //contextClick(ele) is to right click on ele WebElement.
 		
 		List<WebElement> rightEles = driver.findElements(By.cssSelector("ul.context-menu-list span"));
 		

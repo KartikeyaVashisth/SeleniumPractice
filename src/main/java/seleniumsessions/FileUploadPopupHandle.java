@@ -10,7 +10,7 @@ public class FileUploadPopupHandle {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://cgi-lib.berkeley.edu/ex/fup.html");
 
-		driver.findElement(By.name("upfile")).sendKeys("/Users/naveenautomationlabs/Downloads/AgileDevOps.jpeg");
+		driver.findElement(By.name("upfile")).sendKeys("/Users/kvashisth/Downloads/QMac.png");
 		
 		//<tag type="file"> -- this is mandatory attribute
 		
