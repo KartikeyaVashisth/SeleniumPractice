@@ -27,7 +27,7 @@ public class FrameHandle {
 		String header = driver.findElement(By.tagName("h2")).getText();
 		System.out.println(header);
 		
-		driver.switchTo().defaultContent();
+		driver.switchTo().defaultContent(); //To comeback to main document when driver is inside frame.
 		
 		//frame
 		//iframe -- security of the web element
