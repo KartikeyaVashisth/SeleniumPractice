@@ -26,6 +26,8 @@ public class ExplicitWaitConcept {
 //		WebElement email_ele = wait.until(ExpectedConditions.presenceOfElementLocated(emailId));
 //		email_ele.sendKeys("test@gmail.com");
 
+		// By using the Explicit Wait command, the WebDriver is directed to wait until a certain condition(ExpectedConditions) occurs before proceeding with execution of the code.
+		//Setting Explicit Wait is important in cases where there are certain elements that naturally take more time to load. Explicit wait is more intelligent, but can only be applied for specified elements
 		waitForElementPresence(emailId, 10).sendKeys("test@gmail.com");
 		getElement(password).sendKeys("test@123");
 		getElement(loginBtn).click();

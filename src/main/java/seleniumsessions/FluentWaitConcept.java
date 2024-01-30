@@ -23,7 +23,8 @@ public class FluentWaitConcept {
 		driver = new ChromeDriver();
 		driver.get("https://www.freshworks.com/");
 		By freeTrial = By.cssSelector("a[title='Free Trial11']");
-
+		
+		//Fluent Wait looks for a web element repeatedly at regular intervals until timeout happens or until the object is found before throwing the “ElementNotVisibleException”.
 		
 //		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 //									.withTimeout(Duration.ofSeconds(10))

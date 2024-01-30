@@ -14,7 +14,10 @@ public class ImplicitylWaitConcept {
 		WebDriver driver = new ChromeDriver();
 		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);//sel 3.x
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));//sel 4.x
-		
+		 
+		//Implicit Wait directs the Selenium WebDriver to wait for a certain measure of time before throwing an exception. 
+		//Once this time is set, WebDriver will wait for the element before the exception occurs.
+		//Once the command is run, Implicit Wait remains for the entire duration for which the browser is open. It’s default setting is 0,
 		//global wait: 10 secs
 		//it will be applied for all the element by default
 		//FE -- imp wait will be applied automatically
